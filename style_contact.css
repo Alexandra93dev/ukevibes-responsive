@@ -1,0 +1,292 @@
+/* CSS VARIABLES */
+:root {
+	--primary: #02aa9d;
+	--dark: #093d54;
+	--light: #fff;
+	--shadow: 0 1px 20px rgba(104, 104, 104, 1);
+}
+
+html {
+	box-sizing: border-box;
+	font-family: Roboto, Helvetica, sans-serif;
+	color: var(--dark);
+}
+
+body {
+	background: #ccc;
+	margin: 30px 50px;
+	line-height: 1.4;
+}
+
+.btn {
+	background: var(--dark);
+	color: var(--light);
+	padding: 0.6rem 1.3rem;
+	text-decoration: none;
+	border: none;
+	border-radius: 10px;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrapper {
+	display: grid;
+	grid-gap: 20px;
+}
+
+.logo {
+	margin: 0;
+	padding: 0;
+	width: 30%;
+}
+
+.logo p {
+	font-size: 5rem;
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
+}
+
+.logo .light-color {
+	color: #02aa9d;
+}
+
+/* NAVIGATION */
+.main-nav ul{
+	display: grid;
+	grid-gap: 20px;
+	padding: 0;
+	list-style: none;
+	grid-template-columns: 1fr 1fr 1fr 1fr; /*or we could use repeat(4, 1fr)*/
+}
+
+.main-nav a {
+	background: var(--primary);
+	display: block;
+	text-decoration: none;
+	padding: 0.8rem;
+	text-align: center;
+	color: var(--dark);
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+	background: var(--dark);
+	color: var(--light);
+}
+
+/*DROPDOWN MENU*/
+.main-nav ul.menus {
+  height: auto;
+  width: 180px;
+  background: var(--primary);
+  position: absolute;
+  z-index: 99;
+  display: none;
+  border: 0;
+}
+
+.main-nav ul.menus li {
+  display: block;
+  width: 100%;
+  font: 12px Arial;
+  text-transform: none;
+}
+
+.main-nav li:hover ul.menus {
+  display: block;
+}
+
+.main-nav ul.menus a:hover {
+  background: var(--primary);
+}
+
+.main-nav ul.menus .submenu {
+  display: none;
+  position: absolute;
+  left: 180px;
+  background: var(--dark);
+  top: 0;
+  width: 180px;
+}
+
+.main-nav ul.menus .submenu li {
+  background: var(--dark);
+}
+
+.main-nav ul.menus .submenu {
+  display: block;
+}
+
+/* FORM CONTAINER */
+.form-container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas:
+		'bg-pic bg-pic';
+}
+
+/* BACKGROUND */
+.bg-pic {
+	grid-area: bg-pic;
+	min-height: 700px;
+	background: url('poze/brown-ukulele.jpg');
+	background-position: center;
+	background-size: cover;
+
+	color: #fff;
+	padding: 3rem;
+	box-shadow: var(--shadow);
+}
+
+.bg-pic h1 {
+	font-size: 3rem;
+	margin-bottom: 0;
+	background: #333;
+	padding: 1.3rem;
+	text-align: center;
+	opacity: 0.5;
+}
+
+.bg-pic p {
+	font-size: 1.3rem;
+	margin-top: 0;
+	background: #333;
+	padding: 1.3rem;
+	opacity: 0.5;
+	text-align: center;
+}
+
+/* FORM */
+#our-form {
+	padding-left: 7rem;
+}
+
+#our-form div{
+	font-size: 1.5rem;
+	padding-bottom: 2rem;
+}
+
+#our-form label{
+	font-size: 1.5rem;
+}
+
+#our-form input[type="text"]{
+	padding: 1rem;
+	border: none;
+	border-radius: 10px;
+}
+
+#our-form input[type="email"]{
+	padding: 1rem;
+	border: none;
+	border-radius: 10px;
+}
+
+#our-form #ebook {
+	width: 30%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border: none;
+	background: #093d54;
+	color: #fff;
+	font-size: 1.3rem;
+	text-align: center;
+	/*opacity: 0.5;*/
+}
+
+#our-form textarea {
+	padding: 1.3rem;
+	border: none;
+	border-radius: 10px;
+}
+
+.button_1 {
+	padding: 0.8rem;
+	margin-left: 3rem;
+	max-width: 100px;
+	background: #093d54;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+
+.button_1:hover {
+	background: #02aa9d;
+	color: #000;
+}
+
+/*Form events styling*/
+#termsAndCondHint {
+  color: #fff;
+  padding-left: 22px;
+}
+
+.warning {
+}
+/*.tip {background: #333;}*/
+
+#ebookHint {
+  color: #000;
+  padding-left: 22px;
+}
+
+.selectbox {
+  display: inline;
+}
+
+.checkbox {
+  display: inline;
+  font-size: 16px;
+}
+
+.checkbox a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+#our-form input[type="checkbox"] {
+	padding: 1rem;
+}
+
+/* Membership Options */
+#ebookHint, #termsAndCondHint {
+  /*color: #fff;*/
+  text-shadow: -1px 1px 2px #000;}
+
+#terms {
+  margin-top: 30px;}
+
+/* Footer */
+footer {
+margin-top: 2rem;
+background: var(--dark);
+color: var(--light);
+text-align: center;
+padding: 1rem;
+}
+
+/*Media Queries*/
+@media(max-width: 700px){
+	#our-form {
+		text-align: center;
+		padding-left: 0;
+	}
+	
+	.button_1 {
+	text-align: center;
+	margin-left: 0;
+}
+	
+	
+	.main-nav ul {
+		grid-template-columns: 1fr;
+	}
+}

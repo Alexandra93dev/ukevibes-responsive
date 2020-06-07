@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Tot ce trebuie sa stii despre skateboarding">
+	<meta name="keywords" content="skateboards, tips, ideas, skateboarding, helmets">
+	<meta name="author" content="Alexandra Nistor">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<script src="https://kit.fontawesome.com/e08e0fbdc5.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style_contact.css" />
+	<title>UkeVibes | Contact</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="logo">
+			<img src="poze/logo-ukevibes.png" alt="" width="150px" />
+		</div>
+		<nav class="main-nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="descopera.html" title="descopera">Descopera</a>
+					<ul class='menus'>
+						<li class='submenu'>
+							<li><a href='descopera.html' title='start'>Start</a></li>
+							<li><a href='lectii.html' title='lectii'>Lectii</a></li>
+							<li><a href='interviuri.html' title='interviuri'>Interviuri</a></li>
+							<li><a href='construieste.html' title='construieste'>Construieste</a></li>
+							<li><a href='tutoriale.html' title='tutoriale'>Tutoriale</a></li>
+						</li>
+					</ul>
+				</li>
+				<li><a href="despre.html">Despre Noi</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		
+		<section class="form-container">
+			<header class="bg-pic">
+				<h1>Scrie-ne!</h1>
+				<p>Foloseste formularul de contact sau scrie-ne la adresa contact@ukevibes.com </p>
+				
+				<form name="contact" method="POST" data-netlify="true" id="our-form">
+					   <div>
+						<label>Nume</label></br>
+						<input type="text" name="text" placeholder="Nume" />
+					   </div>
+					   
+					   <div>
+						<label>E-mail</label></br>
+						<input type="email" name="email" placeholder="Adresa de e-mail" />
+					   </div>
+					   
+					   <div>
+						<label>Mesaj</label></br>
+						<textarea name="message" placeholder="Mesaj..."></textarea>
+					   </div>
+					   <!--
+					   <label for="ebook" class="selectbox"> Vrei un cadou? Alege un e-book si noi ti-l trimitem: </label>
+						<select id="ebook">
+							<option value="nothing">Selecteaza...</option>
+							<option value="tips">7 Motive Pentru A Invata Ukulele  </option>
+							<option value="info">De Ce Conteaza Calitatea Lemnului</option>
+						</select>
+						<div id="ebookHint" class="tip"></div>
+						-->
+
+						<input type="checkbox" id="termsAndCond" />
+						<label for="termsAndCond" class="checkbox"> Bifeaza ca esti de acord cu <a href="https://www.termsfeed.com/live/c592a442-5ba4-4557-bd7b-408afd43776d" target="_blank">Termeni &amp; Conditii</a> si <a href="https://www.termsfeed.com/live/9efbeddf-d4f8-4611-af04-19b7d486a279" target="_blank">Politica de Confidentialitate</a></label>
+						<div id="termsAndCondHint" class="warning"></div>
+					   
+					   <button class="button_1" type="submit" value="next">Trimite</button>
+				</form>
+			</header>
+		</section>
+			
+
+		
+		<footer>
+			<p>UkeVibes &copy; 2020</p>
+		</footer>
+	
+	</div>
+	
+	<script src="main-contact.js"></script>
+</body>
+</html>
